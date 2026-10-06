@@ -22,10 +22,195 @@
     <a class="CTA" href="#Properties">Find Property</a>
   </header>
   <main>
-    <div id="Properties"></div>
+      <section class="hero">
+        <div class="hero__content">
+          <h1>Find a place you'll love to call home</h1>
+          <p>Discover exceptional properties across Mashhad</p>
+        </div>
+        <div class="hero__media">
+        <img
+        src="./assets/images/modern.png"
+        alt="Exterior of a modern house with large windows"
+        class="hero__image">
+        <form class="hero__search" dir="ltr">
+          <div class="search__field">
+            <label for="transaction">Buy / Rent</label>
+            <select name="transaction" id="transaction">
+              <option value="buy">Buy</option>
+              <option value="rent">Rent</option>
+            </select>
+          </div>
+           <div class="search__field">
+        <label for="location">Location</label>
+        <select id="location" name="location">
+          <option value="">All locations</option>
+          <option value="sajjad">Sajjad</option>
+          <option value="ahmadabad">Ahmadabad</option>
+          <option value="vakilabad">Vakilabad</option>
+        </select>
+      </div>
+            <div class="search__field">
+        <label for="property-type">Property Type</label>
+        <select id="property-type" name="propertyType">
+          <option value="">All types</option>
+          <option value="apartment">Apartment</option>
+          <option value="house">House</option>
+          <option value="villa">Villa</option>
+        </select>
+      </div>
+
+      <button class="search__button" type="submit">
+        Search
+      </button>
+
+        </form>
+        </div>
+      </section>
+    <section class="properties" id="Properties" dir="ltr" aria-labelledby="properties-title">
+      <div class="properties__header">
+        <h2 id="properties-title">Featured Properties</h2>
+        <p>Discover some of our most exclusive properties.</p>
+      </div>
+
+      <div class="properties__grid">
+        <article class="property-card" data-status="sale">
+          <img
+            class="property-card__image"
+            src="./assets/images/cart1.png"
+            alt="Property photo for the Modern Villa sample listing"
+          >
+          <div class="property-card__content">
+            <span class="property-card__badge">For Sale</span>
+            <h3 class="property-card__title">Modern Villa</h3>
+            <p class="property-card__location">
+              <svg aria-hidden="true" class="property-card__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>Sajjad, Mashhad</span>
+            </p>
+
+            <ul class="property-card__features">
+              <li>
+                <svg aria-hidden="true" class="property-card__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4M12 4v6M2 18h20"/>
+                </svg>
+                <span>3 bedrooms</span>
+              </li>
+              <li>
+                <svg aria-hidden="true" class="property-card__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M10 4 8 2a2 2 0 0 0-4 2v8M9 5l2-2M2 12h20M4 12v4a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4v-4M6 20v2M18 20v2"/>
+                </svg>
+                <span>2 bathrooms</span>
+              </li>
+              <li>
+                <svg aria-hidden="true" class="property-card__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m21.3 8.7-6-6a1 1 0 0 0-1.4 0l-11.2 11.2a1 1 0 0 0 0 1.4l6 6a1 1 0 0 0 1.4 0L21.3 10.1a1 1 0 0 0 0-1.4ZM7.5 10.5l2 2M10.5 7.5l2 2M13.5 4.5l2 2M4.5 13.5l2 2"/>
+                </svg>
+                <span>180 m²</span>
+              </li>
+            </ul>
+
+            <p class="property-card__price">12.5 billion toman</p>
+          </div>
+        </article>
+
+        <article class="property-card" data-status="rent">
+          <img
+            class="property-card__image"
+            src="./assets/images/cart2.png"
+            alt="Property photo for the Luxury Apartment sample listing"
+          >
+          <div class="property-card__content">
+            <span class="property-card__badge">For Rent</span>
+            <h3 class="property-card__title">Luxury Apartment</h3>
+            <p class="property-card__location">
+              <svg aria-hidden="true" class="property-card__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>Ahmadabad, Mashhad</span>
+            </p>
+
+            <ul class="property-card__features">
+              <li>
+                <svg aria-hidden="true" class="property-card__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4M12 4v6M2 18h20"/>
+                </svg>
+                <span>2 bedrooms</span>
+              </li>
+              <li>
+                <svg aria-hidden="true" class="property-card__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M10 4 8 2a2 2 0 0 0-4 2v8M9 5l2-2M2 12h20M4 12v4a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4v-4M6 20v2M18 20v2"/>
+                </svg>
+                <span>1 bathroom</span>
+              </li>
+              <li>
+                <svg aria-hidden="true" class="property-card__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m21.3 8.7-6-6a1 1 0 0 0-1.4 0l-11.2 11.2a1 1 0 0 0 0 1.4l6 6a1 1 0 0 0 1.4 0L21.3 10.1a1 1 0 0 0 0-1.4ZM7.5 10.5l2 2M10.5 7.5l2 2M13.5 4.5l2 2M4.5 13.5l2 2"/>
+                </svg>
+                <span>110 m²</span>
+              </li>
+            </ul>
+
+            <p class="property-card__price">25 billion toman</p>
+          </div>
+        </article>
+
+        <article class="property-card" data-status="sale">
+          <img
+            class="property-card__image"
+            src="./assets/images/cart3.png"
+            alt="Property photo for the Family House sample listing"
+          >
+          <div class="property-card__content">
+            <span class="property-card__badge">For Sale</span>
+            <h3 class="property-card__title">Family House</h3>
+            <p class="property-card__location">
+              <svg aria-hidden="true" class="property-card__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>Vakilabad, Mashhad</span>
+            </p>
+
+            <ul class="property-card__features">
+              <li>
+                <svg aria-hidden="true" class="property-card__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4M12 4v6M2 18h20"/>
+                </svg>
+                <span>4 bedrooms</span>
+              </li>
+              <li>
+                <svg aria-hidden="true" class="property-card__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M10 4 8 2a2 2 0 0 0-4 2v8M9 5l2-2M2 12h20M4 12v4a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4v-4M6 20v2M18 20v2"/>
+                </svg>
+                <span>3 bathrooms</span>
+              </li>
+              <li>
+                <svg aria-hidden="true" class="property-card__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m21.3 8.7-6-6a1 1 0 0 0-1.4 0l-11.2 11.2a1 1 0 0 0 0 1.4l6 6a1 1 0 0 0 1.4 0L21.3 10.1a1 1 0 0 0 0-1.4ZM7.5 10.5l2 2M10.5 7.5l2 2M13.5 4.5l2 2M4.5 13.5l2 2"/>
+                </svg>
+                <span>220 m²</span>
+              </li>
+            </ul>
+
+            <p class="property-card__price">8.9 billion toman</p>
+          </div>
+        </article>
+       
+      </div>
+    </section>
     <div id="About"></div>
     <div id="Contact"></div>
   </main>
 </body>
 </html>
+
+
+
+
+
+
+
 
