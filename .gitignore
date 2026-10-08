@@ -1,0 +1,21 @@
+# Local dependencies and tooling
+node_modules/
+.cache/
+coverage/
+playwright-report/
+test-results/
+*.log
+
+# Local environment and editor settings
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local backups and unused original images
+/css/style.before-cream-purple.css
+/property-cards.backup.html
+/assets/images/*.png
